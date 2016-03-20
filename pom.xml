@@ -35,18 +35,17 @@
 				</executions>
 
 				<configuration>
-					<schemaDirectory>${project.basedir}/src/main/xsd</schemaDirectory>
+					<schemaDirectory>${basedir}/src/main/xsd</schemaDirectory>
 					<schemaIncludes>
 						<include>Patient.xsd</include>
 					</schemaIncludes>
-					<bindingDirectory>${project.basedir}/src/main/xsd</bindingDirectory>
+					<bindingDirectory>${basedir}/src/main/xsd</bindingDirectory>
 					<bindingIncludes>
 						<include>global.xjb</include>
 					</bindingIncludes>
-					<generateDirectory>${project.basedir}/src/generated</generateDirectory>
+					<generateDirectory>${basedir}/target/generated-sources</generateDirectory>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
